@@ -1,0 +1,35 @@
+.topbar {
+    background-color:#007bff;
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom:  10px;
+  
+    .topbar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+  
+        li {
+          display: inline-block;
+          margin-right: 10px;
+  
+          &:last-child {
+            margin-right: 0;
+          }
+  
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  
