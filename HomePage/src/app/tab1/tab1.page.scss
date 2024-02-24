@@ -1,0 +1,206 @@
+.story-list {
+  padding: 16px 0 8px;
+  background-color: #ffffff;
+
+  width: 100%;
+
+  .scroll-horizontal {
+    padding-left: 0px;
+
+  }
+
+  .scroll-item {
+    text-align: center;
+    margin-right: 3px;
+
+    .avatar-md {
+      margin-left: 3px;
+      width: 50px;
+      height: 80px;
+      border-radius: 20px;
+      padding: 0px;
+      border: 3px solid var(--ion-color-light);
+      
+      right: 0;
+      bottom: 0;
+      
+      .ion-textim{
+        font-size: large;
+        font-weight: 1000;
+        font-style: bold;
+        align-items: center;
+        font-size: 25px;
+      }
+
+    }
+  }
+
+  .scroll-item-top {
+    right: 100px;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+
+  .item-label {
+    font-size: 13px;
+ 
+  }
+
+
+
+  .halfcircle {
+    
+    width: 47px;
+    height: 40px;
+    background: #3498db;
+    border-radius: 0px 0px 20px 20px;
+    /* Soldan sağa, sırasıyla sol üst, sağ üst, sağ alt, sol alt */
+    margin-top: 10px;
+
+    .ion-text{
+      font-family:monospace;
+    }
+
+  }
+    
+}
+
+
+
+.ion-color-new {
+  --ion-color-base: var(--ion-color-new);
+  --ion-color-base-rgb: var(--ion-color-new-rgb);
+  --ion-color-contrast: var(--ion-color-new-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-new-contrast-rgb);
+  --ion-color-shade: var(--ion-color-new-shade);
+  --ion-color-tint: var(--ion-color-new-tint);
+}
+
+.ion-color-buttoncolor {
+  --ion-color-base: var(--ion-color-buttoncolor);
+  --ion-color-base-rgb: var(--ion-color-buttoncolor-rgb);
+
+}
+
+
+.ion-color-backgroundcolor {
+  --ion-color-base: var(--ion-color-backgroundcolor);
+  --ion-color-base-rgb: var(--ion-color-backgroundcolor-rgb);
+
+}
+
+.my-ion-toolbar {
+  height: 50px;
+  /* İstediğiniz yüksekliği belirtin */
+}
+
+.my-data-div {
+  width: 100vw;
+  height: 30px;
+
+}
+
+.ion-title-top {
+
+  font-size: larger;
+  font-weight: 300;
+}
+
+.with-margin {
+  margin-left: 8px;
+  font-size: 14px;
+  color:#3498db;
+  font-weight: 300;
+}
+ion-datetime {
+  position: absolute;
+  z-index: 9999; /* veya daha yüksek bir değer */
+}
+ion-checkbox {
+  --size: 24px;
+  --checkbox-background-checked: #3498db;
+}
+
+ion-checkbox::part(container) {
+  border-radius: 6px;
+  border: 2px solid #a8a8a8;
+  margin-left: 15px;
+}
+.line {
+  width: 90%; /* Çizginin uzunluğunu ayarlayabilirsiniz */
+  height: 2px; /* Çizginin kalınlığını ayarlayabilirsiniz */
+  background-color: #c3e4f9; /* Çizgi rengi */
+  justify-content: center;
+    align-items: center;
+  margin-left: 5%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.avatarim{
+  width: 35px;
+  height: 35px;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.container {
+  position: relative;
+  border-bottom: 4px solid rgb(225, 228, 228);
+  
+
+}
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  width: 50px;
+  height: 50px;
+
+}
+.userinfodiv {
+  margin-top: 2%;
+}
+.userinfo {
+  margin-left: 22%;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #025891;
+}
+.ion-checkboxim{
+  margin-left: 10px;
+  color: #025891;
+  font-weight: 300;
+
+  
+}
+
+.taken{
+  margin-bottom: 10px;
+  
+}
+
+
+.divim{
+  margin-bottom: 0px;
+  margin-top:-30px;
+}
+
+.time {
+  margin-left: 5%;
+  font-size: 20px;
+  font-weight: 500;
+  color: #025891;
+  margin-bottom: -20px;
+  margin-top:60px;
+
+}
+.icone{
+  width: 45px;
+  height: 45px;
+}
+
+.divim2{
+  margin-bottom: 0px;
+  margin-top:-70px;
+}

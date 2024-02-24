@@ -1,0 +1,35 @@
+.comment-item {
+    padding: 8px;
+    border-bottom: 1px solid var(--ion-color-light);
+    line-height: 1.4;
+  
+    &.reply {
+      padding: 0;
+      border-bottom: none;
+    }
+  
+    .username {
+      font-weight: 700;
+  
+    }
+  
+    .comment-actions {
+      font-size: 13px;
+      color: var(--ion-color-medium);
+      
+  
+
+    }
+  
+    .hash-tag {
+      text-decoration: none;
+      margin-right: 4px;
+    }
+  
+    .replies {
+      padding-left: 40px;
+    }
+  }
+  
+
+  

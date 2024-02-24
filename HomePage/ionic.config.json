@@ -1,0 +1,7 @@
+{
+  "name": "markeight",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

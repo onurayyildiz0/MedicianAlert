@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-toolbar class="my-ion-toolbar" color="new">
+    <ion-buttons slot="start">
+      <ion-button color="buttoncolor">
+        <ion-icon name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title color="backgroundcolor" class="ion-title-top">MedProtector</ion-title>
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Takvim bileşeni -->
+  <ion-datetime class="form-control" *ngIf="showDatePicker" locale="tr-TR" displayFormat="DD/MM/YYYY"
+    [(ngModel)]="selectedDate"></ion-datetime>
+
+  <div class="my-data-div">
+    <ion-toolbar class="my-div-ion-toolbar" color="white">
+      <ion-buttons slot="end">
+        <ion-button color="buttoncolor" (click)="showCalendar()">
+          <ion-icon name="calendar-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title color="backgroundcolor">JANUARY</ion-title>
+      <ion-text class="with-margin"> TODAY</ion-text>
+    </ion-toolbar>
+  </div>
+
+  <div class="story-list">
+    <div class="scroll-horizontal">
+
+      <div class="scroll-item-top">
+        <div class="scroll-item" *ngFor="let item of date">
+
+
+          <ion-avatar class="avatar-md " (click)="getPage2()">
+            <div>
+              <ion-text color="buttoncolor" class="ion-textim">{{item.day}} </ion-text>
+            </div>
+
+            <div class="halfcircle">
+
+              <ion-text> {{item.shortday}} </ion-text>
+
+            </div>
+          </ion-avatar>
+
+          <div class="item-label">
+            <!--{{i+1}}  -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="divim2">
+<div class="divim" *ngFor="let i of medicinies">
+
+  <h2 class="time">{{i.time}}</h2>
+
+  <ion-card color="new" >
+
+ 
+      <ion-avatar class="topleft" horizontal="start">
+        <img src="../assets/img/{{i.type}}" alt="pill" />
+      </ion-avatar>
+
+    <ion-label>
+    <div class="userinfodiv">
+      <h2 class="userinfo">{{i.medicinies}}</h2>
+    </div>
+  </ion-label>
+    <div class="line"></div>
+    <div class="taken">
+    <ion-checkbox labelPlacement="end" class="ion-checkboxim">Taken</ion-checkbox>
+    <ion-checkbox labelPlacement="end"  class="ion-checkboxim">Skipped</ion-checkbox>
+  </div>
+  </ion-card>
+</div>
+</div>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="add-circle-sharp" class="icone"></ion-icon>
+         </ion-fab-button>
+  </ion-fab>
+
+
+  
+  
+
+</ion-content>
